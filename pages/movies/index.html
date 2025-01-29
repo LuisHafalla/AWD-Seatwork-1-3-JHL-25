@@ -11,11 +11,11 @@
 <body>
     <h1>AVAILABLE MOVIE</h1>
     <div class="movies">
-        <div class="movie"
-            onclick="">
+        <div class="movie" style=""
+            onclick="openModal('The Amazing Spider Man')">
             <div class="movie-title">The Amazing Spider Man</div>
         </div>
-        <div class="movie" onclick="">
+        <div class="movie" style="" onclick="openModal('2012')">
             <div class="movie-title">2012</div>
         </div>
     </div>
@@ -27,12 +27,12 @@
             <p style="text-align: left; color: green; font-weight: 900;">AVAILABLE: <span id="available-count">10</span>
             </p>
             <div class="seats" id="seats-container"></div>
-            <button onclick="" class="btn reserve-btn">Reserve</button>
-            <button onclick="" class="btn close-btn">Close</button>
+            <button onclick="reserveSeats()" class="btn reserve-btn">Reserve</button>
+            <button onclick="closeModal()" class="btn close-btn">Close</button>
         </div>
     </div>
 
-
+    <script src="assets/js/scripts.js"></script>
 </body>
 
 </html>
