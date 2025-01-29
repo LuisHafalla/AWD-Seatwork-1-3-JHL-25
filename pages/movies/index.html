@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema Reservation</title>
+</head>
+
+<body>
+    <h1>AVAILABLE MOVIE</h1>
+    <div class="movies">
+        <div class="movie"
+            onclick="">
+            <div class="movie-title">The Amazing Spider Man</div>
+        </div>
+        <div class="movie" onclick="">
+            <div class="movie-title">2012</div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <h2 id="movie-name"></h2>
+            <p>SELECT YOUR SEATS: <span id="selected-count"></span></p>
+            <p style="text-align: left; color: green; font-weight: 900;">AVAILABLE: <span id="available-count">10</span>
+            </p>
+            <div class="seats" id="seats-container"></div>
+            <button onclick="" class="btn reserve-btn">Reserve</button>
+            <button onclick="" class="btn close-btn">Close</button>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
