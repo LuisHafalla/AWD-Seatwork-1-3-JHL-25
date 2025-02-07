@@ -9,14 +9,29 @@
 </head>
 
 <body>
-    <h1>AVAILABLE MOVIE</h1>
-    <div class="movies">
-        <div class="movie" style="background-image: url('assets/img/amazing-spiderman.jpg');"
-            onclick="openModal('The Amazing Spider Man')">
-            <div class="movie-title">The Amazing Spider Man</div>
-        </div>
-        <div class="movie" style="background-image: url('assets/img/2012.jpg');" onclick="openModal('2012')">
-            <div class="movie-title">2012</div>
+    <div class="sidebar">
+        <a href="../../index.html">
+            <h2>🎬 Movie App</h2>
+        </a>
+        <nav>
+            <ul>
+                <li class="active">Now Showing</li>
+                <li>My Tickets</li>
+                <li>Profile</li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="content">
+        <h1>Now Showing</h1>
+        <div class="movies">
+            <div class="movie" style="background-image: url('assets/img/amazing-spiderman.jpg');"
+                onclick="openModal('The Amazing Spider-Man')">
+                <div class="movie-title">The Amazing Spider-Man</div>
+            </div>
+            <div class="movie" style="background-image: url('assets/img/2012.jpg');" onclick="openModal('2012')">
+                <div class="movie-title">2012</div>
+            </div>
         </div>
     </div>
 
@@ -24,8 +39,7 @@
         <div class="modal-content">
             <h2 id="movie-name"></h2>
             <p>SELECT YOUR SEATS: <span id="selected-count"></span></p>
-            <p style="text-align: left; color: green; font-weight: 900;">AVAILABLE: <span id="available-count">10</span>
-            </p>
+            <p style="text-align: left; color: green; font-weight: 900;">AVAILABLE: <span id="available-count">10</span></p>
             <div class="seats" id="seats-container"></div>
             <button onclick="reserveSeats()" class="btn reserve-btn">Reserve</button>
             <button onclick="closeModal()" class="btn close-btn">Close</button>
