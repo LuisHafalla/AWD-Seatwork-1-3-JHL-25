@@ -83,7 +83,8 @@ This project is a movie ticket reservation system that uses js storage. The proj
 6. Renaming of Pages folder names are a must, and relates to what it is doing or data it holding.
 7. File Structure to follow below.
 
-WD-ProjectName
+```
+AWD-Seatwork-1-3-JHL-25
 └─ assets
 |   └─ css
 |   |   └─ style.css
@@ -104,6 +105,7 @@ WD-ProjectName
 |     └─ index.html
 └─ index.html
 └─ readme.md
+```
 
 ## Resources
 
